@@ -1,0 +1,10 @@
+<h2>Available No</h2>
+
+
+<%=link_to "Genrate PhoneNumbers", genrate_numbers_phone_numbers_path%>
+<%=link_to "Assign a Number", assign_a_number_phone_numbers_path%>
+
+<%= form_with url: assign_a_requested_number_phone_numbers_path do |form| %>
+  <%= form.text_field :no %>
+  <%= form.submit "Assign Requested_number"%>
+<% end %>
